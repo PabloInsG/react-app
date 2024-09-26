@@ -21,7 +21,6 @@ const FollowMouse = () => {
   }, [enabled])
 
   useEffect(() => {
-    document.body.classList.toggle('no-cursor', enabled)
 
     return () => {
       document.body.classList.remove('no-cursor')
@@ -32,7 +31,7 @@ const FollowMouse = () => {
     <>
     <div style={{
       position: 'absolute',
-      backgroundColor: '#09f',
+      border: 'solid 1px #FFF',
       borderRadius: '50%',
       opacity: 0.8,
       pointerEvents: 'none',
